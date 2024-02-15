@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+    <h2>Order Form</h2>
+    <form action="confirmation.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="Harmilan" name="Name" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="3658661708" name="phone"  required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="harmilankumar1.max@gmail.com" name="email" required><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="1" name="quantity" min="1" required><br>
+
+        <label for="deliveryDate">Delivery Date:</label>
+        <input type="date" id="12/02/2024" name="deliveryDate" required><br>
+
+        <label for="color">Preferred Color:</label>
+        <input type="color" id="black" name="color" value="#ff0000"><br>
+
+        <label for="slider">Choose a value (1-100):</label>
+        <input type="range" id="6" name="slider" min="1" max="100"><br>
+
+        <label for="progress">Progress:</label>
+        <progress id="progress" value="50" max="100"></progress><br>
+
+        <label for="meter">Meter:</label>
+        <meter id="meter" value="75" min="0" max="100">75%</meter><br>
+
+        <label for="extras">Extras:</label>
+        <select id="extras" name="extras[]" multiple>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</body>
+</html>
+
